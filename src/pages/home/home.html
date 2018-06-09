@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Animais
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let dados of informacoes">
+      <ion-thumbnail item-start>
+      </ion-thumbnail>
+      <h2>{{dados.NOMEANIMAL}}</h2>
+      <!-- <p>Hayao Miyazaki • 1988</p> -->
+      <button ion-button clear item-end>Visualizar</button>
+    </ion-item>
+  </ion-list>
+</ion-content>
